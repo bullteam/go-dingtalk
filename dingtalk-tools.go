@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/icepy/go-dingtalk/src"
+	"dingtalksdk/src"
 )
 
 func main() {

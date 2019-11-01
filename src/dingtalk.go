@@ -9,7 +9,7 @@ import (
 /*
 *	date: 2018/05/20
 	modify date: 2019/11/2
-*	version: 0.1
+*	version: 0.2
 *	author: xiangwenwen(icepy)
 *   modify author: wutongci
  */

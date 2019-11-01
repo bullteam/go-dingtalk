@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"dingtalksdk/src"
 )
 
 func main() {
@@ -10,11 +11,9 @@ func main() {
 }
 
 func getCompanyDingTalkClient() *dingtalk.DingTalkClient {
-	CorpID := os.Getenv("CorpId")
-	CorpSecret := os.Getenv("CorpSecret")
-	config := &dingtalk.DTCompanyConfig{
-		CorpID:     CorpID,
-		CorpSecret: CorpSecret,
+	config := &dingtalk.DTConfig{
+		AppKey:     os.Getenv("AppKey"),
+		AppSecret: os.Getenv("AppSecret"),
 	}
 	c := dingtalk.NewDingTalkCompanyClient(config)
 	return c

@@ -154,8 +154,8 @@ func (dtc *DingTalkClient) RefreshCompanyAccessToken() error {
 		return nil
 	}
 	params := url.Values{}
-	params.Add("corpid", dtc.DTConfig.CorpID)
-	params.Add("corpsecret", dtc.DTConfig.CorpSecret)
+	params.Add("appkey", dtc.DTConfig.AppKey)
+	params.Add("appsecret", dtc.DTConfig.AppSecret)
 	err = dtc.httpRPC("gettoken", params, nil, &data)
 	if err == nil {
 		dtc.AccessToken = data.AccessToken
