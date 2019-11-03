@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"dingtalk/src"
+	"github.com/bullteam/dingtalk/src"
 )
 
 func main() {

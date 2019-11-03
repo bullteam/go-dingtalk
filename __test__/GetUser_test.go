@@ -1,7 +1,7 @@
 package dingtalkTest
 
 import (
-	dingtalk "dingtalk/src"
+	dingtalk "github.com/bullteam/dingtalk/src"
 	"testing"
 )
 
