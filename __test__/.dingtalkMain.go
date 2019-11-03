@@ -2,7 +2,7 @@ package main
 
 import (
 	"os"
-	"dingtalksdk/src"
+	"dingtalk/src"
 )
 
 func main() {

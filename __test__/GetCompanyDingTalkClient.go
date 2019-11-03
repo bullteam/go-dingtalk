@@ -2,7 +2,7 @@ package dingtalkTest
 
 import (
 	"os"
-	"dingtalksdk/src"
+	"dingtalk/src"
 )
 
 func GetCompanyDingTalkClient() *dingtalk.DingTalkClient {
