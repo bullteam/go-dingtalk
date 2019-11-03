@@ -20,3 +20,14 @@ func Test_UserInfoByUserId(t *testing.T)  {
 		t.Log("测试获取用户信息通过", Info)
 	}
 }
+
+func Test_UserSimpleList(t *testing.T)  {
+	c := GetCompanyDingTalkClient()
+	c.RefreshCompanyAccessToken()
+	List, err := c.UserSimpleList(142341752)
+	if err != nil {
+		t.Error("测试未能获取用户列表")
+	} else {
+		t.Log("测试获取用户列表通过", List)
+	}
+}

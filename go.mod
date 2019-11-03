@@ -1,3 +1,3 @@
-module dingtalksdk
+module dingtalk
 
 go 1.13
